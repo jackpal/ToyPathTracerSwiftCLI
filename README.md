@@ -36,6 +36,6 @@ OPTIONS:
   --frames <frames>       number of frames to average together to create the image. (default: 1000)
   --lossy-compression-quality <lossy-compression-quality>
                           lossy compression quality level. (default: 0.76)
-  --out <out>             output file name (default: trace.heic)
+  --out <out>             output file name. (heic, jpeg, png, tiff) (default: trace.heic)
   -h, --help              Show help information.
 ```
