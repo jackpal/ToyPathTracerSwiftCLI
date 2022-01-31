@@ -7,7 +7,7 @@ This is a companion to the blog article
 
 ## Requirements
 
-+ MacOS 10.10.
++ MacOS 12.0
 + Swift 5.6 or later. (Xcode 13.3 or later.)
 
 ## Build
@@ -39,4 +39,3 @@ OPTIONS:
   --out <out>             output file name (default: trace.heic)
   -h, --help              Show help information.
 ```
-
