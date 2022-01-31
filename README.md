@@ -35,7 +35,7 @@ OPTIONS:
   --height <height>       height of the image. (default: 494)
   --frames <frames>       number of frames to average together to create the image. (default: 1000)
   --lossy-compression-quality <lossy-compression-quality>
-                          0.0 .1.0 lossy compression quality level. (default: 0.76)
+                          lossy compression quality level. (default: 0.76)
   --out <out>             output file name (default: trace.heic)
   -h, --help              Show help information.
 ```

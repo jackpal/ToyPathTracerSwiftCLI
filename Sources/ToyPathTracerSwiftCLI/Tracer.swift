@@ -17,7 +17,7 @@ struct Tracer: ParsableCommand {
   @Option(help: "number of frames to average together to create the image.")
   var frames = 1000
   
-  @Option(help: "0.0 .1.0 lossy compression quality level.")
+  @Option(help: "lossy compression quality level.")
   var lossyCompressionQuality = 0.76
   
   @Option(help: "output file name")
@@ -27,7 +27,7 @@ struct Tracer: ParsableCommand {
     let buffer = trace(width: width, height: height, frames: frames, threaded: threaded)
     let image = buffer.image()
     
-    let context = CIContext(options: [.workingFormat: CIFormat.RGBAf])
+    let context = CIContext()
     let filename = getDocumentsDirectory().appendingPathComponent(out)
     print("Writing to \(filename.absoluteString)")
     try context.writeHEIF10Representation(of: image.settingAlphaOne(in: image.extent),
