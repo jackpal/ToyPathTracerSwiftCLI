@@ -25,7 +25,7 @@ struct Tracer: ParsableCommand {
 
   mutating func run() throws {
     let buffer = trace(width: width, height: height, frames: frames, threaded: threaded)
-    let image = buffer.image()
+    let image = createImage(buffer)
     
     let options = [kCGImageDestinationLossyCompressionQuality
                    as CIImageRepresentationOption : lossyCompressionQuality]
