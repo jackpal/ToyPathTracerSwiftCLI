@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:ToyPathTracerSwiftCLI}",
+      "name": "Debug ToyPathTracerSwiftCLI",
+      "program": "${workspaceFolder:ToyPathTracerSwiftCLI}/.build/debug/ToyPathTracerSwiftCLI",
+      "preLaunchTask": "swift: Build Debug ToyPathTracerSwiftCLI"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:ToyPathTracerSwiftCLI}",
+      "name": "Release ToyPathTracerSwiftCLI",
+      "program": "${workspaceFolder:ToyPathTracerSwiftCLI}/.build/release/ToyPathTracerSwiftCLI",
+      "preLaunchTask": "swift: Build Release ToyPathTracerSwiftCLI"
+    }
+  ]
+}
